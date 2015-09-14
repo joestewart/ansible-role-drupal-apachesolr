@@ -1,0 +1,3 @@
+---
+# defaults file for drupal-apachesolr
+drupal_apachesolr_solr_conf: "solr-3.x"
