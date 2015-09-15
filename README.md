@@ -6,7 +6,7 @@ Apply Drupal Apachesolr module configuration to a Solr server.
 Requirements
 ------------
 
-Depeneds on a working Solr installation.
+Depends on a working Solr installation.
 
 Role Variables
 --------------
@@ -16,7 +16,7 @@ drupal_apachesolr_solr_conf: "solr-3.x"
 Dependencies
 ------------
 
-Depeneds on the geerlingguy.solr role.
+Depends on the geerlingguy.solr role.
 
 Example Playbook
 ----------------
@@ -25,7 +25,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: joe.stewart.drupal-apachesolr }
+         - { role: joestewart.drupal-apachesolr }
 
 License
 -------
