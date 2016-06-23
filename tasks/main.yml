@@ -11,6 +11,11 @@
     solr_conf_directory: "{{ solr_home }}/collection1/conf/"
   when: "solr_version.split('.')[0] == '4'"
 
+- name: Set solr_conf_directory for apachesolr version 5.x.
+  set_fact:
+    solr_conf_directory: "{{ solr_home }}/data/collection1/conf/"
+  when: "solr_version.split('.')[0] == '5'"
+
 - name: Ensure Drupal apachesolr configuration applied.
   get_url: "url=http://cgit.drupalcode.org/apachesolr/plain/solr-conf/solr-{{ solr_version.split('.')[0] }}.x/{{ item }} dest={{ solr_conf_directory }} force=yes"
   notify: restart solr
